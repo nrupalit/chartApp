@@ -16,6 +16,7 @@ const Routes = () => {
              >
                 <AppStack.Screen name="Login" component={Screens.Login} />
                 <AppStack.Screen name="registerAccount" component={Screens.RegisterAccount} />
+                <AppStack.Screen name="dashboard" component={Screens.Dashboard} />
             </AppStack.Navigator>
         </NavigationContainer>
     );

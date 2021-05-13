@@ -74,7 +74,6 @@ const loginStyle = StyleSheet.create({
     Button: {
         padding: 30.8,
         borderRadius: 4,
-        
       },
       mainBtn: {
         backgroundColor: '#64C2BE',
@@ -87,6 +86,18 @@ const loginStyle = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 12,
       },
+      buttonRegister: {
+        padding: 30.8,
+        borderRadius: 4,
+        marginTop: 140,
+      },
+      registerLink: {
+          position: 'relative',
+          textAlign: 'center',
+          color: 'white',
+            fontWeight: 'bold',
+            fontSize: 12,
+      }
 });
 
 export default loginStyle;

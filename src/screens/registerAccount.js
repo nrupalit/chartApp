@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-const RegisterAccount = (props) => {
+const RegisterAccount = () => {
     return(
         <View>
             <Text>Hello World</Text>

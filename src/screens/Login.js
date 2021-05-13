@@ -2,11 +2,13 @@ import React from "react";
 import { View, Text, Image, ImageBackground } from "react-native";
 import { connect } from "react-redux";
 import loginStyle from "../assets/css/loginStyle.js";
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 
 import { Form, Item, Body, CheckBox, Button, Input } from "native-base";
 
-const Login = () => {
+const Login = ({ navigation }) => {
     state = {
         counter: 0
     }
@@ -27,14 +29,25 @@ const Login = () => {
                             <Input placeholder="Password" style={loginStyle.Input} />
                         </Item>
                         <View style={loginStyle.Button}>
-                            <Button block style={loginStyle.mainBtn}>
+                            <Button block style={loginStyle.mainBtn} onPress={() => navigation.navigate('dashboard')}>
                                 <Text style={loginStyle.btnText}>Submit</Text>
                             </Button>
                         </View>
                     </Form>
                 </View>
+                <View style={loginStyle.buttonRegister}>
+                    <Button block style={loginStyle.mainBtn} onPress={() => navigation.navigate('registerAccount')}>
+                        <Text style={loginStyle.registerLink}>Haven't Register Account?</Text>
+                    </Button>
+                </View>
             </View>
-            <View style={loginStyle.bottom}></View>
+            <View style={loginStyle.bottom}>
+                {/* <View style={loginStyle.buttonRegister}>
+                    <Button block style={loginStyle.mainBtn} onPress={() => navigation.navigate('registerAccount')}>
+                        <Text style={loginStyle.registerLink}>Haven't Register Account?</Text>
+                    </Button>
+                </View> */}
+            </View>
             
         </View>
     );
