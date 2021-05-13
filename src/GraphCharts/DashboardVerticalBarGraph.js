@@ -1,10 +1,11 @@
 import React from "react";
-import { View } from "react-native";
+import { View , Text } from "react-native";
 import VerticalBarGraph from '@chartiful/react-native-vertical-bar-graph'
 
 const DashboardVerticalBarGraph = () => {
     return(
         <View>
+            <Text>Costs</Text>
             <VerticalBarGraph
             data={[20, 45, 28, 80, 99, 43, 50]}
             labels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']}
